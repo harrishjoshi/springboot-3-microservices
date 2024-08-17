@@ -12,7 +12,6 @@ public class OpenAPIConfig {
 
     @Bean
     public OpenAPI inventoryServiceAPI() {
-
         return new OpenAPI()
                 .info(new Info().title("Inventory Service API")
                         .description("Inventory Service API Documentation")

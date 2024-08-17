@@ -12,7 +12,6 @@ public class OpenAPIConfig {
 
     @Bean
     public OpenAPI productServiceAPI() {
-
         return new OpenAPI()
                 .info(new Info().title("Product Service API")
                         .description("Product Service API Documentation")
