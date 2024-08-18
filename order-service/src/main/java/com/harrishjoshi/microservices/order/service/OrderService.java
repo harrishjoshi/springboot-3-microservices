@@ -1,6 +1,6 @@
 package com.harrishjoshi.microservices.order.service;
 
-import com.harrishjoshi.microservices.order.config.InventoryClient;
+import com.harrishjoshi.microservices.order.client.InventoryClient;
 import com.harrishjoshi.microservices.order.dto.OrderRequest;
 import com.harrishjoshi.microservices.order.model.Order;
 import com.harrishjoshi.microservices.order.repository.OrderRepository;
