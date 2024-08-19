@@ -21,7 +21,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http.authorizeHttpRequests(authorize ->
                         authorize.requestMatchers(swaggerResourceUrls).permitAll()
-                                .anyRequest().authenticated()
+                                .anyRequest().permitAll()
                 )
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .oauth2ResourceServer(oauth2 -> oauth2.jwt(Customizer.withDefaults()))
