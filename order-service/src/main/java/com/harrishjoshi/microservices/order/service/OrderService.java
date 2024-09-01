@@ -37,5 +37,6 @@ public class OrderService {
         order.setPrice(orderRequest.price());
 
         orderRepository.save(order);
+        log.info("Order placed successfully. Order number: {}", order.getOrderNumber());
     }
 }
